@@ -109,6 +109,9 @@ Resources:
 Azure AKS Docs: https://learn.microsoft.com/azure/aks/
 Terraform Azure Provider: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs
 
+
+
+
 Lab 2: Automate AWS VPC and EC2 Setup with Terraform
 Objective: Use Terraform to provision an AWS VPC, subnets, and EC2 instances, simulating infrastructure automation for a Senior Cloud Engineer role.
 
@@ -186,6 +189,10 @@ Resources:
 
 AWS Terraform Provider: https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 AWS VPC Docs: https://docs.aws.amazon.com/vpc/
+
+
+
+
 
 Lab 3: Deploy a Containerized App with Docker and Azure Container Instances
 Objective: Build and deploy a containerized application using Docker and Azure Container Instances (ACI), focusing on containerization for infrastructure roles.
