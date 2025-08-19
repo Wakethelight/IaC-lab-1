@@ -2,7 +2,7 @@
 $env:ARM_SUBSCRIPTION_ID="bb8f3354-1ce0-4efc-b2a7-8506304c5362"
 
 # set the application / environment
-$env:TF_VAR_application_name="network"
+$env:TF_VAR_application_name="terraform-state"
 $env:TF_VAR_environment_name="prod"
 
 # set the backend

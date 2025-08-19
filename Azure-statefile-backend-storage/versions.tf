@@ -9,10 +9,9 @@ terraform {
         version = "~>3.7.0"
     }
   }
+  backend "azurerm" {}
 }
 
 provider "azurerm" {
   features {}
-
-  subscription_id = "bb8f3354-1ce0-4efc-b2a7-8506304c5362"
 }
