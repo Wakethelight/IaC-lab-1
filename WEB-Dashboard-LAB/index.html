@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+     <html lang="en">
+     <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Cloud Infrastructure Dashboard</title>
+       <style>
+         body {
+           font-family: 'Segoe UI', Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f5f6f5;
+           color: #333;
+         }
+         header {
+           background-color: #005a9e;
+           color: white;
+           text-align: center;
+           padding: 2em 0;
+           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+         }
+         header h1 {
+           margin: 0;
+           font-size: 2.5em;
+         }
+         header p {
+           margin: 0.5em 0 0;
+           font-size: 1.2em;
+         }
+         nav {
+           background-color: #333;
+           padding: 1em;
+           text-align: center;
+         }
+         nav a {
+           color: white;
+           margin: 0 1.5em;
+           text-decoration: none;
+           font-weight: bold;
+           transition: color 0.3s;
+         }
+         nav a:hover {
+           color: #0078d4;
+         }
+         .container {
+           max-width: 1200px;
+           margin: 2em auto;
+           padding: 0 1em;
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+           gap: 1.5em;
+         }
+         .card {
+           background-color: white;
+           border-radius: 8px;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+           padding: 1.5em;
+           transition: transform 0.3s;
+         }
+         .card:hover {
+           transform: translateY(-5px);
+         }
+         .card h2 {
+           margin-top: 0;
+           color: #005a9e;
+         }
+         .card p {
+           margin: 0.5em 0;
+         }
+         footer {
+           background-color: #333;
+           color: white;
+           text-align: center;
+           padding: 1em;
+           position: relative;
+           margin-top: 2em;
+         }
+         @media (max-width: 600px) {
+           .container {
+             grid-template-columns: 1fr;
+           }
+         }
+       </style>
+     </head>
+     <body>
+       <header>
+         <h1>Cloud Infrastructure Dashboard</h1>
+         <p>Designed and Managed by Christopher M. Degner, Senior Cloud Engineer</p>
+       </header>
+       <nav>
+         <a href="#home">Home</a>
+         <a href="#services">Services</a>
+         <a href="#metrics">Metrics</a>
+         <a href="#contact">Contact</a>
+       </nav>
+       <div class="container">
+         <div class="card">
+           <h2>Azure AKS Cluster</h2>
+           <p>Scalable Kubernetes cluster deployed with Terraform, achieving 99% uptime in a test environment.</p>
+           <p><strong>Status:</strong> Active</p>
+         </div>
+         <div class="card">
+           <h2>Secure VNet Infrastructure</h2>
+           <p>Automated VNet, VM, Key Vault, and Log Analytics using modular Terraform, ensuring secure deployments.</p>
+           <p><strong>Status:</strong> Active</p>
+         </div>
+         <div class="card">
+           <h2>Containerized Web App</h2>
+           <p>Hosted on Azure Container Instances, integrated with VNet and monitored via Log Analytics.</p>
+           <p><strong>Status:</strong> Deploying</p>
+         </div>
+         <div class="card">
+           <h2>Analytics Dashboard</h2>
+           <p>Integrated with Power BI for real-time infrastructure metrics visualization.</p>
+           <p><strong>Status:</strong> Planned</p>
+         </div>
+       </div>
+       <footer>
+         <p>&copy; 2025 Christopher M. Degner | Powered by Microsoft Azure</p>
+       </footer>
+     </body>
+     </html>
