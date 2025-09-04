@@ -16,3 +16,6 @@ variable "base_address_space" {
 variable "log_analytics_workspace_id" {
     type = string
 }
+variable "log_analytics_workspace_key" {
+    type = string
+}
