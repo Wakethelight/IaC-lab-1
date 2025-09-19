@@ -45,6 +45,13 @@ resource "azurerm_subnet" "snet1" {
 
 }
 
+resource "azurerm_subnet" "snet2" {
+  name                 = "snet2-${var.application_name}-${var.environment_name}"
+  resource_group_name  = azurerm_resource_group.main.name
+  virtual_network_name = azurerm_virtual_network.main.name
+  address_prefixes     = [local.snet2_subnet]
+
+}
 
 /*
 #network security group
