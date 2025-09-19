@@ -1,5 +1,5 @@
 resource "azurerm_container_group" "example" {
-  name                = "example-continst"
+  name                = "wake-test-container-${var.environment_name}"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   ip_address_type     = "Public"
