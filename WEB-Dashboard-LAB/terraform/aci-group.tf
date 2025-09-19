@@ -1,9 +1,10 @@
+/*
 resource "azurerm_container_group" "example" {
   name                = "wake-test-container-${var.environment_name}"
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
   ip_address_type     = "Public"
-  dns_name_label      = "aci-label"
+  dns_name_label      = "aci-wake-test-${var.environment_name}"
   os_type             = "Linux"
 
   container {
@@ -13,26 +14,13 @@ resource "azurerm_container_group" "example" {
     memory = "1.5"
 
     ports {
-      port     = 443
+      port     = 80
       protocol = "TCP"
     }
   }
-
-  container {
-    name   = "sidecar"
-    image  = "mcr.microsoft.com/azuredocs/aci-tutorial-sidecar"
-    cpu    = "0.5"
-    memory = "1.5"
-  }
-  
-  diagnostics {
-    log_analytics {
-        workspace_id  = var.log_analytics_workspace_id
-        workspace_key = var.log_analytics_workspace_key
-         }
-       }
 
   tags = {
     environment = var.environment_name
   }
 }
+*/

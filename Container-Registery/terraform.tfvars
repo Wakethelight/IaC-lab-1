@@ -1,2 +1,0 @@
-
-primary_location = "eastus2"
